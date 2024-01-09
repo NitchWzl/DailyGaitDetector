@@ -113,7 +113,7 @@ struct ContentView: View {
             // Here you can add code to share the file or perform other actions
             print("Data saved to: \(path)")
         } catch {
-            print("Error saving data to CSV: \(error)")
+            print("Error saving data to CSV: \(error).")
         }
     }
 
