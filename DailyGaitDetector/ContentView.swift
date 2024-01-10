@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreMotion
+import MessageUI
 //import SwiftUICharts
 
 struct ContentView: View {
@@ -98,6 +99,8 @@ struct ContentView: View {
         isRecording = false
         print("push stop")
         saveDataToCSV()
+        shareData()
+        // code: share the data with email or message or other chat
     }
     
     private func saveDataToCSV() {
@@ -117,6 +120,15 @@ struct ContentView: View {
         }
     }
 
+    private func shareData() {
+       guard let url = URL(string: "file://\(FileManager.default.temporaryDirectory.path)/recorded_data.csv") else {
+           print("Invalid file URL")
+           return
+       }
+       
+       let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+       UIApplication.shared.windows.first?.rootViewController?.present(activityViewController, animated: true, completion: nil)
+   }
 }
 
 
