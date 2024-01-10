@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreMotion
+import HealthKit
 import MessageUI
 //import SwiftUICharts
 
@@ -14,6 +15,7 @@ struct ContentView: View {
     @State private var isRecording = false
     @State private var imuData = "No data"
     @State private var motionManager = CMMotionManager()
+    @State private var healthStore = HKHealthStore()
     @State private var recordingFrequency: Double = 60 // Default frequency is 60 Hz
     @State private var recordedData: [String] = []
     
@@ -93,6 +95,7 @@ struct ContentView: View {
     private func startRecording() {
         isRecording = true
         recordedData.removeAll()
+        requestHealthKitAuthorization()
     }
     
     private func stopRecording() {
@@ -129,6 +132,54 @@ struct ContentView: View {
        let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
        UIApplication.shared.windows.first?.rootViewController?.present(activityViewController, animated: true, completion: nil)
    }
+    
+    private func requestHealthKitAuthorization() {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            print("HealthKit is not available on this device.")
+            return
+        }
+
+        let typesToShare: Set<HKSampleType> = []
+        let typesToRead: Set<HKObjectType> = [HKObjectType.workoutType(), HKSeriesType.workoutRoute()]
+
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
+            if success {
+                print("HealthKit authorization granted.")
+                self.queryWorkouts()
+            } else {
+                print("HealthKit authorization denied.")
+                if let error = error {
+                    print("Error: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+
+    private func queryWorkouts() {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            print("HealthKit is not available on this device.")
+            return
+        }
+
+        let workoutType = HKObjectType.workoutType()
+        let predicate = HKQuery.predicateForWorkouts(with: .running)
+        let query = HKSampleQuery(sampleType: workoutType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { query, samples, error in
+            if let error = error {
+                print("Error querying workouts: \(error.localizedDescription)")
+                return
+            }
+
+            if let workouts = samples as? [HKWorkout] {
+                for workout in workouts {
+                    // Process workout data
+                    print("Workout: \(workout)")
+                }
+            }
+        }
+
+        healthStore.execute(query)
+    }
+
 }
 
 
