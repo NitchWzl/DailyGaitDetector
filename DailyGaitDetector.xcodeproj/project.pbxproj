@@ -17,7 +17,6 @@
 		46485B562B4F731E00BABCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46485B552B4F731E00BABCCB /* Preview Assets.xcassets */; };
 		46485B5F2B4F747700BABCCB /* WatchMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46485B5E2B4F747700BABCCB /* WatchMotionManager.swift */; };
 		465EA5852B4D77DF009B1E21 /* DailyGaitDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EA5842B4D77DF009B1E21 /* DailyGaitDetector.swift */; };
-		466DB88D2B3A60EA00789347 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DB88C2B3A60EA00789347 /* MotionManager.swift */; };
 		466DB88E2B3A617000789347 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462EC0C12B39D29F00D59389 /* CoreMotion.framework */; };
 		466DB8912B3A618300789347 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462EC0C12B39D29F00D59389 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
@@ -60,7 +59,6 @@
 		46485B552B4F731E00BABCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46485B5E2B4F747700BABCCB /* WatchMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMotionManager.swift; sourceTree = "<group>"; };
 		465EA5842B4D77DF009B1E21 /* DailyGaitDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGaitDetector.swift; sourceTree = "<group>"; };
-		466DB88C2B3A60EA00789347 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		46DC11992B4E83DC0020CC7E /* DailyGaitDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyGaitDetector.entitlements; sourceTree = "<group>"; };
 		46DC11A02B4F51CD0020CC7E /* GaitDetectorWatch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = GaitDetectorWatch.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				46DC11992B4E83DC0020CC7E /* DailyGaitDetector.entitlements */,
-				466DB88C2B3A60EA00789347 /* MotionManager.swift */,
 				462EC0B42B39C71100D59389 /* ContentView.swift */,
 				465EA5842B4D77DF009B1E21 /* DailyGaitDetector.swift */,
 				462EC0B62B39C71200D59389 /* Assets.xcassets */,
@@ -319,7 +316,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				462EC0B52B39C71100D59389 /* ContentView.swift in Sources */,
-				466DB88D2B3A60EA00789347 /* MotionManager.swift in Sources */,
 				465EA5852B4D77DF009B1E21 /* DailyGaitDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
