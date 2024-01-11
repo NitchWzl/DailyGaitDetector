@@ -10,11 +10,41 @@
 		462EC0B52B39C71100D59389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EC0B42B39C71100D59389 /* ContentView.swift */; };
 		462EC0B72B39C71200D59389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462EC0B62B39C71200D59389 /* Assets.xcassets */; };
 		462EC0BA2B39C71200D59389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462EC0B92B39C71200D59389 /* Preview Assets.xcassets */; };
+		46485B4A2B4F731D00BABCCB /* WatchGaitDetector Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46485B492B4F731D00BABCCB /* WatchGaitDetector Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46485B4F2B4F731D00BABCCB /* WatchGaitDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46485B4E2B4F731D00BABCCB /* WatchGaitDetectorApp.swift */; };
+		46485B512B4F731D00BABCCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46485B502B4F731D00BABCCB /* ContentView.swift */; };
+		46485B532B4F731E00BABCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46485B522B4F731E00BABCCB /* Assets.xcassets */; };
+		46485B562B4F731E00BABCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46485B552B4F731E00BABCCB /* Preview Assets.xcassets */; };
+		46485B5F2B4F747700BABCCB /* WatchMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46485B5E2B4F747700BABCCB /* WatchMotionManager.swift */; };
 		465EA5852B4D77DF009B1E21 /* DailyGaitDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EA5842B4D77DF009B1E21 /* DailyGaitDetector.swift */; };
 		466DB88D2B3A60EA00789347 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DB88C2B3A60EA00789347 /* MotionManager.swift */; };
 		466DB88E2B3A617000789347 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462EC0C12B39D29F00D59389 /* CoreMotion.framework */; };
 		466DB8912B3A618300789347 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462EC0C12B39D29F00D59389 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46485B4B2B4F731D00BABCCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 462EC0A72B39C71100D59389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46485B482B4F731D00BABCCB;
+			remoteInfo = "WatchGaitDetector Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46485B5A2B4F731E00BABCCB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				46485B4A2B4F731D00BABCCB /* WatchGaitDetector Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		462EC0AF2B39C71100D59389 /* DailyGaitDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyGaitDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,9 +52,17 @@
 		462EC0B62B39C71200D59389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		462EC0B92B39C71200D59389 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		462EC0C12B39D29F00D59389 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		46485B442B4F731D00BABCCB /* WatchGaitDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchGaitDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46485B492B4F731D00BABCCB /* WatchGaitDetector Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchGaitDetector Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46485B4E2B4F731D00BABCCB /* WatchGaitDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchGaitDetectorApp.swift; sourceTree = "<group>"; };
+		46485B502B4F731D00BABCCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46485B522B4F731E00BABCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46485B552B4F731E00BABCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46485B5E2B4F747700BABCCB /* WatchMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMotionManager.swift; sourceTree = "<group>"; };
 		465EA5842B4D77DF009B1E21 /* DailyGaitDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGaitDetector.swift; sourceTree = "<group>"; };
 		466DB88C2B3A60EA00789347 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		46DC11992B4E83DC0020CC7E /* DailyGaitDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyGaitDetector.entitlements; sourceTree = "<group>"; };
+		46DC11A02B4F51CD0020CC7E /* GaitDetectorWatch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = GaitDetectorWatch.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +75,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46485B462B4F731D00BABCCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DC119D2B4F51CD0020CC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				462EC0B12B39C71100D59389 /* DailyGaitDetector */,
+				46485B4D2B4F731D00BABCCB /* WatchGaitDetector Watch App */,
 				462EC0B02B39C71100D59389 /* Products */,
 				462EC0C02B39D29F00D59389 /* Frameworks */,
 			);
@@ -53,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				462EC0AF2B39C71100D59389 /* DailyGaitDetector.app */,
+				46DC11A02B4F51CD0020CC7E /* GaitDetectorWatch.appex */,
+				46485B442B4F731D00BABCCB /* WatchGaitDetector.app */,
+				46485B492B4F731D00BABCCB /* WatchGaitDetector Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +142,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		46485B4D2B4F731D00BABCCB /* WatchGaitDetector Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				46485B4E2B4F731D00BABCCB /* WatchGaitDetectorApp.swift */,
+				46485B502B4F731D00BABCCB /* ContentView.swift */,
+				46485B5E2B4F747700BABCCB /* WatchMotionManager.swift */,
+				46485B522B4F731E00BABCCB /* Assets.xcassets */,
+				46485B542B4F731E00BABCCB /* Preview Content */,
+			);
+			path = "WatchGaitDetector Watch App";
+			sourceTree = "<group>";
+		};
+		46485B542B4F731E00BABCCB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46485B552B4F731E00BABCCB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +182,57 @@
 			productReference = 462EC0AF2B39C71100D59389 /* DailyGaitDetector.app */;
 			productType = "com.apple.product-type.application";
 		};
+		46485B432B4F731D00BABCCB /* WatchGaitDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46485B5B2B4F731E00BABCCB /* Build configuration list for PBXNativeTarget "WatchGaitDetector" */;
+			buildPhases = (
+				46485B422B4F731D00BABCCB /* Resources */,
+				46485B5A2B4F731E00BABCCB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46485B4C2B4F731D00BABCCB /* PBXTargetDependency */,
+			);
+			name = WatchGaitDetector;
+			productName = WatchGaitDetector;
+			productReference = 46485B442B4F731D00BABCCB /* WatchGaitDetector.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		46485B482B4F731D00BABCCB /* WatchGaitDetector Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46485B572B4F731E00BABCCB /* Build configuration list for PBXNativeTarget "WatchGaitDetector Watch App" */;
+			buildPhases = (
+				46485B452B4F731D00BABCCB /* Sources */,
+				46485B462B4F731D00BABCCB /* Frameworks */,
+				46485B472B4F731D00BABCCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchGaitDetector Watch App";
+			productName = "WatchGaitDetector Watch App";
+			productReference = 46485B492B4F731D00BABCCB /* WatchGaitDetector Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46DC119F2B4F51CD0020CC7E /* GaitDetectorWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DC11A72B4F51CD0020CC7E /* Build configuration list for PBXNativeTarget "GaitDetectorWatch" */;
+			buildPhases = (
+				46DC119C2B4F51CD0020CC7E /* Sources */,
+				46DC119D2B4F51CD0020CC7E /* Frameworks */,
+				46DC119E2B4F51CD0020CC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaitDetectorWatch;
+			productName = GaitDetectorWatch;
+			productReference = 46DC11A02B4F51CD0020CC7E /* GaitDetectorWatch.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +244,15 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					462EC0AE2B39C71100D59389 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					46485B432B4F731D00BABCCB = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					46485B482B4F731D00BABCCB = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					46DC119F2B4F51CD0020CC7E = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -135,6 +271,9 @@
 			projectRoot = "";
 			targets = (
 				462EC0AE2B39C71100D59389 /* DailyGaitDetector */,
+				46DC119F2B4F51CD0020CC7E /* GaitDetectorWatch */,
+				46485B432B4F731D00BABCCB /* WatchGaitDetector */,
+				46485B482B4F731D00BABCCB /* WatchGaitDetector Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +285,29 @@
 			files = (
 				462EC0BA2B39C71200D59389 /* Preview Assets.xcassets in Resources */,
 				462EC0B72B39C71200D59389 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46485B422B4F731D00BABCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46485B472B4F731D00BABCCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46485B562B4F731E00BABCCB /* Preview Assets.xcassets in Resources */,
+				46485B532B4F731E00BABCCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DC119E2B4F51CD0020CC7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +324,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46485B452B4F731D00BABCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46485B5F2B4F747700BABCCB /* WatchMotionManager.swift in Sources */,
+				46485B512B4F731D00BABCCB /* ContentView.swift in Sources */,
+				46485B4F2B4F731D00BABCCB /* WatchGaitDetectorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DC119C2B4F51CD0020CC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46485B4C2B4F731D00BABCCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46485B482B4F731D00BABCCB /* WatchGaitDetector Watch App */;
+			targetProxy = 46485B4B2B4F731D00BABCCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		462EC0BB2B39C71200D59389 /* Debug */ = {
@@ -350,6 +537,152 @@
 			};
 			name = Release;
 		};
+		46485B582B4F731E00BABCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchGaitDetector Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B6Q254YT45;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchGaitDetector;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keio.WatchGaitDetector.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		46485B592B4F731E00BABCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchGaitDetector Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B6Q254YT45;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchGaitDetector;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keio.WatchGaitDetector.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		46485B5C2B4F731E00BABCCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6Q254YT45;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchGaitDetector;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keio.WatchGaitDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46485B5D2B4F731E00BABCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6Q254YT45;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchGaitDetector;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keio.WatchGaitDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		46DC11A82B4F51CD0020CC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6Q254YT45;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GaitDetectorWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GaitDetectorWatch;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keio.GaitDetectorWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		46DC11A92B4F51CD0020CC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6Q254YT45;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GaitDetectorWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GaitDetectorWatch;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keio.GaitDetectorWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +700,33 @@
 			buildConfigurations = (
 				462EC0BE2B39C71200D59389 /* Debug */,
 				462EC0BF2B39C71200D59389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46485B572B4F731E00BABCCB /* Build configuration list for PBXNativeTarget "WatchGaitDetector Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46485B582B4F731E00BABCCB /* Debug */,
+				46485B592B4F731E00BABCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46485B5B2B4F731E00BABCCB /* Build configuration list for PBXNativeTarget "WatchGaitDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46485B5C2B4F731E00BABCCB /* Debug */,
+				46485B5D2B4F731E00BABCCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DC11A72B4F51CD0020CC7E /* Build configuration list for PBXNativeTarget "GaitDetectorWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DC11A82B4F51CD0020CC7E /* Debug */,
+				46DC11A92B4F51CD0020CC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

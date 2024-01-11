@@ -9,7 +9,37 @@ import SwiftUI
 import CoreMotion
 import HealthKit
 import MessageUI
+import WatchConnectivity
 //import SwiftUICharts
+
+//class WatchSessionDelegate: NSObject, ObservableObject, WCSessionDelegate {
+//    func sessionDidBecomeInactive(_ session: WCSession) {
+//        <#code#>
+//    }
+//    
+//    func sessionDidDeactivate(_ session: WCSession) {
+//        <#code#>
+//    }
+//    
+//    @Published var receivedData: YourExerciseDataModel?
+//
+//    // Implement WCSessionDelegate methods...
+//    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+//        // Handle session activation completion
+//    }
+//
+//    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
+//        do {
+//            if let receivedData = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(messageData) as? YourExerciseDataModel {
+//                DispatchQueue.main.async {
+//                    self.receivedData = receivedData
+//                }
+//            }
+//        } catch {
+//            print("Error unarchiving data: \(error.localizedDescription)")
+//        }
+//    }
+//}
 
 struct ContentView: View {
     @State private var isRecording = false
@@ -18,6 +48,15 @@ struct ContentView: View {
     @State private var healthStore = HKHealthStore()
     @State private var recordingFrequency: Double = 60 // Default frequency is 60 Hz
     @State private var recordedData: [String] = []
+    
+//    init() {
+//        // Setup Watch Connectivity
+//        if WCSession.default.isSupported {
+//            WCSession.default.delegate = watchSessionDelegate
+//            WCSession.default.activate()
+//        }
+//    }
+
     
     var body: some View {
         VStack {
@@ -186,9 +225,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-
 
       
 struct ContentView_Previews: PreviewProvider {

@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GaitDetectorWatch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>WatchGaitDetector Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>462EC0AE2B39C71100D59389</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46485B432B4F731D00BABCCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46485B482B4F731D00BABCCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var motionManager = WatchMotionManager.shared
+
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Gait Detector Watch")
+                .font(.headline)
+            
+            Spacer()
+            
+            Button("Start Sync") {
+                // Handle the sync button tap
+                motionManager.startMotionUpdates()
+                motionManager.syncMotionData()
+            }
+            .buttonStyle(.bordered)
+            
+            Spacer()
         }
         .padding()
     }
